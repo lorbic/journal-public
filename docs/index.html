@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lorbic Journal</title>
+
+        <style>
+            body {
+                background: #00091b;
+                background: url(bg2.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-blend-mode: darken;
+                background-size: cover;
+                background-attachment: fixed;
+                max-width: 100vh;
+                min-height: 100vh;
+                color: #fff;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    top: 20%;
+                    opacity: 0;
+                }
+                to {
+                    top: 100;
+                    opacity: 1;
+                }
+            }
+
+            @-webkit-keyframes fadeIn {
+                from {
+                    top: 20%;
+                    opacity: 0;
+                }
+                to {
+                    top: 100;
+                    opacity: 1;
+                }
+            }
+
+            .wrapper {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                animation: fadeIn 1000ms ease;
+                -webkit-animation: fadeIn 1000ms ease;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-family: "Poppins", sans-serif;
+                margin-bottom: 0;
+                line-height: 1;
+                font-weight: 700;
+            }
+
+            .dot {
+                color: #4febfe;
+            }
+
+            p {
+                text-align: center;
+                margin: 18px;
+                font-family: "Muli", sans-serif;
+                font-weight: normal;
+                line-height: 2;
+            }
+
+            .icons,
+            .link {
+                text-align: center;
+            }
+
+            .icons i,
+            .link {
+                color: #00091b;
+                background: #fff;
+                height: 15px;
+                width: 15px;
+                padding: 5px 8px;
+                margin: 0 10px;
+                border-radius: 50px;
+                border: 2px solid #fff;
+                transition: all 200ms ease;
+                text-decoration: none;
+                position: relative;
+            }
+
+            .icons i:hover,
+            .icons i:active,
+            .link:hover,
+            .link:active {
+                color: #fff;
+                background: none;
+                cursor: pointer !important;
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                text-decoration: none;
+            }
+
+            .photo-credit{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 0.5em;
+            }
+            .photo-credit a{
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>COMING SOON<span class="dot">.</span></h1>
+            <p>Please revisit us.</p>
+            <p>Check the progress: <a class="link" href="//github.com/lorbic/journal">GITHUB</a></p>
+
+        </div>
+        <p class="photo-credit">
+            <!-- Photo by <a href="https://unsplash.com/@maxbui?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maxime Bui</a> on <a href="https://unsplash.com/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+            Photo by <a href="https://unsplash.com/@awmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maxime Gauthier</a> on <a href="https://unsplash.com/wallpapers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    </body>
+</html>
